@@ -19,8 +19,8 @@ export default function RedirectResultado() {
     const score = parseInt(storedScore);
     const level = getResultLevel(score);
 
-    // Envia direto para o resultado-final correto
-    router.replace(`/resultado-final?level=${level}`);
+    // AGORA APONTA PARA O LUGAR CERTO
+    router.replace(`/resultado/${level}`);
   }, [router]);
 
   return (
