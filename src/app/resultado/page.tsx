@@ -1,16 +1,26 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { getResultLevel } from '@/lib/quiz-data';
 
 export default function RedirectResultado() {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
+    // Verifica se veio da Kiwify (pagamento aprovado)
+    const paid = searchParams.get('paid');
+
+    if (!paid) {
+      // Se não tiver "paid=true", volta para o checkout
+      router.replace('https://pay.kiwify.com.br/SEU-LINK-DE-CHECKOUT');
+      return;
+    }
+
     const storedScore = localStorage.getItem('quizScore');
 
-    // Se não tiver pontuação, volta para o início
+    // Se não tiver pontuação salva, volta pro início
     if (!storedScore) {
       router.replace('/');
       return;
@@ -19,9 +29,9 @@ export default function RedirectResultado() {
     const score = parseInt(storedScore);
     const level = getResultLevel(score);
 
-    // AGORA APONTA PARA O LUGAR CERTO
+    // Redireciona para o resultado correto
     router.replace(`/resultado/${level}`);
-  }, [router]);
+  }, [router, searchParams]);
 
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center">
