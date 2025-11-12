@@ -9,12 +9,12 @@ export default function RedirectResultado() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // Verifica se veio da Kiwify (pagamento aprovado)
+    // Verifica se o pagamento foi confirmado
     const paid = searchParams.get('paid');
 
-    if (!paid) {
-      // Se não tiver "paid=true", volta para o checkout
-      router.replace('https://pay.kiwify.com.br/SEU-LINK-DE-CHECKOUT');
+    if (paid !== 'true') {
+      // Se não tiver o parâmetro correto, volta para o checkout
+      router.replace('https://pay.kiwify.com.br/igYyAIS');
       return;
     }
 
