@@ -21,6 +21,7 @@ export default function ResultadoBaixaPage() {
   return (
     <div className="min-h-screen bg-black text-white p-4">
       <div className={`max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+
         {/* Header */}
         <div className="text-center mb-12 pt-8">
           <h1 className="text-2xl font-bold text-[#D4AF37] mb-4">MindCash</h1>
@@ -43,6 +44,7 @@ export default function ResultadoBaixaPage() {
 
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
+
           {/* Description */}
           <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800">
             <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">📊 Seu Diagnóstico</h3>
