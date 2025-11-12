@@ -16,7 +16,7 @@ export default function ResultadoAltaPage() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const result = resultData.alta;
+  const result = resultData.alto;
 
   return (
     <div className="min-h-screen bg-black text-white p-4">
