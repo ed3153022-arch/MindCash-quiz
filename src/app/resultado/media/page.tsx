@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { resultData } from '@/lib/quiz-data';
 
-export default function ResultadoBaixaPage() {
+export default function ResultadoMediaPage() {
   const [isVisible, setIsVisible] = useState(false);
   const [score, setScore] = useState<number | null>(null);
 
@@ -16,7 +16,7 @@ export default function ResultadoBaixaPage() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const result = resultData.baixa;
+  const result = resultData.media;
 
   return (
     <div className="min-h-screen bg-black text-white p-4">
