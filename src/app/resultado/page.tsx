@@ -3,8 +3,10 @@
 import { useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getResultLevel } from '@/lib/quiz-data';
+import { Suspense } from 'react';
 
-export default function RedirectResultado() {
+// Componente que faz o redirecionamento real
+function RedirectResultadoInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -36,5 +38,18 @@ export default function RedirectResultado() {
     <div className="min-h-screen bg-black text-white flex items-center justify-center">
       <p className="text-gray-400 text-lg">Carregando resultado...</p>
     </div>
+  );
+}
+
+// Componente principal com Suspense
+export default function RedirectResultado() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <p className="text-gray-400 text-lg">Carregando resultado...</p>
+      </div>
+    }>
+      <RedirectResultadoInner />
+    </Suspense>
   );
 }
