@@ -9,15 +9,7 @@ export default function RedirectResultado() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // Verifica se o pagamento foi confirmado
-    const paid = searchParams.get('paid');
-
-    if (paid !== 'true') {
-      // Se não tiver o parâmetro correto, volta para o checkout
-      router.replace('https://pay.kiwify.com.br/igYyAIS');
-      return;
-    }
-
+    // Recupera a pontuação salva
     const storedScore = localStorage.getItem('quizScore');
 
     // Se não tiver pontuação salva, volta pro início
