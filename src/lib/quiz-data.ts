@@ -367,10 +367,10 @@ export const quizQuestions: QuizQuestion[] = [
   }
 ];
 
-export const getResultLevel = (score: number): 'baixa' | 'medio' | 'alto' => {
+export const getResultLevel = (score: number): 'baixa' | 'media' | 'alta' => {
   if (score <= 25) return 'baixa';
-  if (score <= 45) return 'medio';
-  return 'alto';
+  if (score <= 45) return 'media';
+  return 'alta';
 };
 
 
