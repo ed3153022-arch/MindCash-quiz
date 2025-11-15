@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { resultData } from '@/lib/quiz-data';
 
-export default function ResultadoAltaPage() {
+export default function ResultadoAltoPage() {
   const [isVisible, setIsVisible] = useState(false);
   const [score, setScore] = useState<number | null>(null);
 
