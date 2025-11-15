@@ -18,10 +18,26 @@ export default function RedirectResultado() {
     }
 
     const score = parseInt(storedScore);
-    const level = getResultLevel(score);
+    const level = getResultLevel(score); // retorna: baixa / media / alta
 
-    // Redireciona para o resultado correto
-    router.replace(`/resultado/${level}`);
+    // 🔥 Correção completa (convertendo níveis para diretórios)
+    if (level === 'baixa') {
+      router.replace('/resultado/baixa');
+      return;
+    }
+
+    if (level === 'media') {
+      router.replace('/resultado/medio');
+      return;
+    }
+
+    if (level === 'alta') {
+      router.replace('/resultado/alto');
+      return;
+    }
+
+    // fallback de segurança
+    router.replace('/');
   }, [router]);
 
   return (
