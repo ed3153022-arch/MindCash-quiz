@@ -397,7 +397,7 @@ export const resultData = {
       "Crie o hábito de pensar 24h antes de compras não essenciais"
     ]
   },
-  media: {
+  medio: {
     title: "Inteligência Financeira Média",
     subtitle: "Você tem uma base sólida, mas pode evoluir muito mais",
     description: "Parabéns! Você já desenvolveu alguns hábitos financeiros positivos e tem consciência da importância do dinheiro. Agora é hora de refinar suas estratégias e acelerar seus resultados.",
@@ -420,7 +420,7 @@ export const resultData = {
       "Identifique e elimine um gasto desnecessário recorrente"
     ]
   },
-  alta: {
+  alto: {
     title: "Inteligência Financeira Alta",
     subtitle: "Você possui uma mentalidade financeira desenvolvida",
     description: "Excelente! Você demonstra uma compreensão avançada sobre finanças e possui hábitos que te colocam no caminho da prosperidade. Continue refinando suas estratégias para maximizar seus resultados.",
