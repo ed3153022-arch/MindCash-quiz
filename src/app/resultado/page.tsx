@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getResultLevel } from '@/lib/quiz-data';
 
-export const dynamic = 'force-dynamic';
-
 export default function RedirectResultado() {
   const router = useRouter();
 
