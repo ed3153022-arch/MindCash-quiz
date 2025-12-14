@@ -109,7 +109,7 @@ export default function PaywallPage() {
         </div>
 
         {/* CTA Button */}
-        <a href="https://pay.kiwify.com.br/igYyAIS" target="_blank" rel="noopener noreferrer">
+        <a href="https://pay.kiwify.com.br/DoUvUCD" target="_blank" rel="noopener noreferrer">
           <button className="bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold text-xl px-12 py-4 rounded-full hover:shadow-2xl hover:shadow-[#D4AF37]/20 transition-all duration-300 hover:scale-105 mb-6">
             Ver meu resultado
           </button>
