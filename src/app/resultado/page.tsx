@@ -1,14 +1,13 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { getResultLevel } from '@/lib/quiz-data';
 
 export const dynamic = 'force-dynamic';
 
 export default function RedirectResultado() {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     // Recupera a pontuação salva
@@ -25,7 +24,7 @@ export default function RedirectResultado() {
 
     // Redireciona para o resultado correto
     router.replace(`/resultado/${level}`);
-  }, [router, searchParams]);
+  }, [router]);
 
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center">
