@@ -22,47 +22,49 @@ export default function Home() {
 
         {/* Main Title */}
         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Qual é o seu{' '}
+          Você controla seu dinheiro…{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#FFD700]">
-            Nível de Inteligência Financeira?
+            ou ele controla você?
           </span>
         </h2>
 
         {/* Description */}
         <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-          Descubra como sua mentalidade financeira impacta seus resultados e 
-          receba um diagnóstico personalizado sobre seus hábitos com dinheiro.
+          Este teste avalia como você pensa, decide e age quando lida com dinheiro,
+           revelando se suas escolhas financeiras estão sob controle consciente
+          ou sendo guiadas por padrões automáticos.     
         </p>
 
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
             <div className="text-[#D4AF37] text-2xl mb-3">🧠</div>
-            <h3 className="font-semibold mb-2">Análise Mental</h3>
-            <p className="text-gray-400 text-sm">Avaliação profunda da sua mentalidade financeira</p>
+            <h3 className="font-semibold mb-2">Mentalidade Financeira</h3>
+            <p className="text-gray-400 text-sm">Identifique como seus pensamentos influenciam suas decisões com dinheiro
+    </p>
           </div>
           <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
             <div className="text-[#D4AF37] text-2xl mb-3">📊</div>
-            <h3 className="font-semibold mb-2">Diagnóstico Preciso</h3>
-            <p className="text-gray-400 text-sm">Relatório detalhado com seu perfil financeiro</p>
+            <h3 className="font-semibold mb-2">Diagnóstico de Controle</h3>
+            <p className="text-gray-400 text-sm">Veja se você age de forma estratégica ou apenas reage às situações</p>
           </div>
           <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
             <div className="text-[#D4AF37] text-2xl mb-3">🎯</div>
-            <h3 className="font-semibold mb-2">Plano de Ação</h3>
-            <p className="text-gray-400 text-sm">Estratégias personalizadas para evoluir</p>
+            <h3 className="font-semibold mb-2">Direção Prática</h3>
+            <p className="text-gray-400 text-sm">Entenda quais ajustes fazer para assumir o controle financeiro</p>
           </div>
         </div>
 
         {/* CTA Button */}
         <Link href="/quiz">
           <button className="bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold text-xl px-12 py-4 rounded-full hover:shadow-2xl hover:shadow-[#D4AF37]/20 transition-all duration-300 hover:scale-105">
-            Iniciar Teste
+            Quero saber quem está no controle
           </button>
         </Link>
 
         {/* Additional Info */}
         <p className="text-gray-500 text-sm mt-6">
-          ⏱️ Tempo estimado: 6-8 minutos • 30 perguntas estratégicas
+          ⏱️ Teste rápido • Respostas diretas
         </p>
       </div>
     </div>
