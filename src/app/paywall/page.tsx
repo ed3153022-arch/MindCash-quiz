@@ -26,26 +26,27 @@ export default function PaywallPage() {
             </svg>
           </div>
           <h2 className="text-3xl font-bold text-[#D4AF37] mb-2">
-            Seu resultado está pronto ✅
+            Seu diagnóstico está pronto ✅
           </h2>
           <p className="text-xl text-gray-300">
-            Mas ele está bloqueado.
+            Mas o acesso está bloqueado.
           </p>
         </div>
 
         {/* Main Content */}
         <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800 mb-8">
           <h3 className="text-2xl font-semibold mb-6">
-            🔒 Desbloqueie seu{' '}
+            🔒 Desbloqueie seu Diagnóstico{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#FFD700]">
-              Relatório Mental MindCash
+             de Controle Financeiro – MindCash
             </span>
           </h3>
           
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-            Você acabou de completar nossa avaliação de inteligência financeira. 
-            Seu relatório personalizado contém insights valiosos sobre sua mentalidade 
-            financeira e um plano de ação específico para acelerar seus resultados.
+            Você acabou de responder perguntas que revelam como você pensa, decide
+            e reage quando o dinheiro entra na sua vida.
+            Seu diagnóstico mostra se hoje você está no controle
+            ou apenas repetindo padrões que limitam seus resultados financeiros
           </p>
 
           {/* Features */}
@@ -57,10 +58,10 @@ export default function PaywallPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span className="font-semibold">Diagnóstico Completo</span>
+                <span className="font-semibold">Diagnóstico de Controle</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Análise detalhada do seu nível de inteligência financeira
+                Veja se suas decisões financeiras são conscientes ou automáticas
               </p>
             </div>
 
@@ -71,10 +72,10 @@ export default function PaywallPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span className="font-semibold">Pontos Fortes</span>
+                <span className="font-semibold">Padrões de Comportamento</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Identificação dos seus principais talentos financeiros
+                Identifique os hábitos invisíveis que estão guiando seus resultados
               </p>
             </div>
 
@@ -85,10 +86,10 @@ export default function PaywallPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span className="font-semibold">Bloqueios Mentais</span>
+                <span className="font-semibold">Pontos de Força</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Identificação dos padrões que limitam seu crescimento
+                Descubra onde você já toma boas decisões e pode avançar mais rápido
               </p>
             </div>
 
@@ -99,10 +100,10 @@ export default function PaywallPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span className="font-semibold">Plano de Ação</span>
+                <span className="font-semibold">Direção Prática</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Estratégias específicas para os próximos 7 dias
+                Saiba exatamente o que ajustar para assumir o controle do seu dinheiro
               </p>
             </div>
           </div>
@@ -111,7 +112,7 @@ export default function PaywallPage() {
         {/* CTA Button */}
         <a href="https://pay.kiwify.com.br/DoUvUCD" target="_blank" rel="noopener noreferrer">
           <button className="bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold text-xl px-12 py-4 rounded-full hover:shadow-2xl hover:shadow-[#D4AF37]/20 transition-all duration-300 hover:scale-105 mb-6">
-            Ver meu resultado
+            Ver meu diagnóstico agora
           </button>
         </a>
 
