@@ -375,70 +375,70 @@ export const getResultLevel = (score: number): 'baixa' | 'media' | 'alta' => {
 
 export const resultData = {
   baixa: {
-    title: "Inteligência Financeira Baixa",
-    subtitle: "Você está no início da sua jornada financeira",
-    description: "Seus resultados indicam que você ainda está desenvolvendo sua consciência financeira. Isso é completamente normal e o primeiro passo para a transformação é reconhecer onde você está.",
+    title: "Baixo Controle Financeiro",
+    subtitle: "Hoje, o dinheiro influencia suas decisões mais do que você gostaria — mas isso pode mudar rapidamente.",
+    description: "Seu resultado indica que grande parte das suas decisões financeiras ainda acontece no impulso ou por necessidade imediata. Isso demonstra falta de estrutura e clareza, mas também revela um ponto de partida claro para desenvolver controle.",
     strengths: [
-      "Honestidade para reconhecer suas limitações",
-      "Potencial de crescimento imenso",
-      "Oportunidade de construir bases sólidas desde o início"
+      "Reconhecimento de que algo precisa mudar",
+      "Potencial elevado de crescimento",
+      "Abertura para aprender e ajustar hábitos",
+      "Capacidade de começar do zero da forma correta"
     ],
     blocks: [
-      "Falta de planejamento financeiro estruturado",
-      "Decisões baseadas em emoções ao invés de dados",
-      "Ausência de educação financeira formal",
-      "Dificuldade em controlar impulsos de consumo"
+      "Planejar antes de gastar",
+      "Reduzir decisões guiadas pela emoção",
+      "Criar previsibilidade financeira"
     ],
     actions: [
-      "Comece a anotar todos os seus gastos por 7 dias",
-      "Defina uma meta financeira simples para o próximo mês",
-      "Leia 15 minutos por dia sobre educação financeira",
-      "Crie o hábito de pensar 24h antes de compras não essenciais"
+      "Anote todos os seus gastos, sem exceção",
+      "Espere pelo menos 24h antes de compras não essenciais",
+      "Defina uma meta financeira pequena e clara",
+      "Consuma diariamente conteúdo básico sobre dinheiro"
     ]
   },
   media: {
-    title: "Inteligência Financeira Média",
-    subtitle: "Você tem uma base sólida, mas pode evoluir muito mais",
-    description: "Parabéns! Você já desenvolveu alguns hábitos financeiros positivos e tem consciência da importância do dinheiro. Agora é hora de refinar suas estratégias e acelerar seus resultados.",
+    title: "Controle Financeiro Instável",
+    subtitle: "Você entende o dinheiro, mas ainda não mantém controle em todas as situações — o que te dá uma grande margem de crescimento.",
+    description: "Você já possui consciência financeira, porém seu controle varia conforme o momento. Em algumas decisões você planeja e executa bem; em outras, reage ao curto prazo ou deixa o dinheiro decidir por você. Isso indica potencial, mas falta de constância.",
     strengths: [
-      "Consciência financeira desenvolvida",
-      "Alguns hábitos positivos já estabelecidos",
-      "Capacidade de planejamento básico",
-      "Interesse em crescer financeiramente"
+      "Entendimento básico de como o dinheiro funciona",
+      "Capacidade de planejar quando está focado",
+      "Consciência da importância das decisões financeiras",
+      "Desejo real de evoluir financeiramente"
     ],
     blocks: [
-      "Falta de consistência na aplicação dos conhecimentos",
-      "Planejamento ainda superficial",
-      "Dificuldade em resistir a algumas tentações",
+      "Manter disciplina mesmo fora da zona de conforto",
+      "Reduzir decisões impulsivas",
+      "Sustentar estratégias no longo prazo",
       "Conhecimento limitado sobre investimentos"
     ],
     actions: [
-      "Crie um orçamento detalhado e siga rigorosamente por 7 dias",
-      "Estabeleça uma meta de economia específica para este mês",
-      "Pesquise sobre uma nova modalidade de investimento",
-      "Identifique e elimine um gasto desnecessário recorrente"
+      "Defina limites claros de gastos e respeite-os por uma semana",
+      "Identifique um comportamento financeiro que precisa ser corrigido",
+      "Crie uma meta financeira simples e mensurável",
+      "Tome ao menos uma decisão financeira consciente por dia"
     ]
   },
   alta: {
-    title: "Inteligência Financeira Alta",
-    subtitle: "Você possui uma mentalidade financeira desenvolvida",
-    description: "Excelente! Você demonstra uma compreensão avançada sobre finanças e possui hábitos que te colocam no caminho da prosperidade. Continue refinando suas estratégias para maximizar seus resultados.",
+    title: "Alto Nível de Controle Financeiro",
+    subtitle: "Você age com clareza, consciência e domínio sobre suas decisões financeiras.",
+    description: "Você demonstra alto nível de controle sobre suas decisões financeiras. Suas respostas indicam que você age de forma consciente, entende as consequências das escolhas que faz e não permite que o dinheiro conduza seu comportamento. Isso coloca você à frente da maioria das pessoas.",
     strengths: [
-      "Mentalidade financeira bem desenvolvida",
-      "Disciplina e controle sobre gastos",
-      "Visão de longo prazo estabelecida",
-      "Busca constante por conhecimento e crescimento"
+      "Clareza ao tomar decisões envolvendo dinheiro",
+      "Capacidade de controlar impulsos e manter disciplina",
+      "Visão de longo prazo ao lidar com ganhos e gastos",
+      "Postura ativa em aprender e evoluir financeiramente"
     ],
     blocks: [
-      "Possível excesso de conservadorismo em alguns aspectos",
-      "Oportunidade de diversificar ainda mais as estratégias",
-      "Potencial para acelerar a construção de patrimônio"
+      "Evitar acomodação por já ter bons hábitos",
+      "Avaliar se o excesso de cautela limita oportunidades",
+      "Usar seu controle atual para acelerar resultados"
     ],
     actions: [
-      "Revise e otimize sua estratégia de investimentos atual",
-      "Explore uma nova fonte de renda passiva",
-      "Defina uma meta financeira desafiadora para os próximos 90 dias",
-      "Compartilhe conhecimento financeiro com alguém próximo"
+      "Reavalie decisões financeiras recentes e identifique pontos de otimização",
+      "Analise se seu dinheiro está trabalhando no máximo potencial",
+      "Defina um próximo movimento claro para crescimento patrimonial",
+      "Use seu nível de controle para orientar alguém próximo"
     ]
   }
 };
