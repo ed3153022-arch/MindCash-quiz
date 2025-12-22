@@ -45,7 +45,7 @@ export default function ResultadoBaixaPage() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Description */}
           <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800">
-            <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">📊 Seu Diagnóstico</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">📊 Seu Nível de Controle Hoje</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
               {result.description}
             </p>
@@ -53,7 +53,7 @@ export default function ResultadoBaixaPage() {
 
           {/* Strengths */}
           <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800">
-            <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">💪 Seus Pontos Fortes</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">💪 Onde Você Já Tem Controle</h3>
             <ul className="space-y-4">
               {result.strengths.map((strength, index) => (
                 <li key={index} className="flex items-start">
@@ -71,7 +71,7 @@ export default function ResultadoBaixaPage() {
 
         {/* Blocks */}
         <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800 mb-8">
-          <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">🚧 Principais Bloqueios Mentais</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">🚧 Onde Você Pode Avançar Mais</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {result.blocks.map((block, index) => (
               <div key={index} className="flex items-start">
@@ -86,7 +86,7 @@ export default function ResultadoBaixaPage() {
 
         {/* Action Plan */}
         <div className="bg-gradient-to-r from-[#D4AF37]/10 to-[#FFD700]/10 rounded-2xl p-8 border border-[#D4AF37]/30 mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">🎯 Plano de Ação - Próximos 7 Dias</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-[#D4AF37]">🎯 Como Construir Controle nos Próximos 7 Dias</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {result.actions.map((action, index) => (
               <div key={index} className="bg-black/30 rounded-xl p-6 border border-gray-800">
